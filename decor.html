@@ -1,0 +1,559 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Site | Decor</title>
+    <link rel="icon" href="favicon.png"/>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+  </head>
+  <body>
+    <svg style="display: none;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-heart" viewBox="0 0 16 16">
+                <title>heart</title>
+                <path d="M11.8 1c-1.682 0-3.129 1.368-3.799 2.797-0.671-1.429-2.118-2.797-3.8-2.797-2.318 0-4.2 1.882-4.2 4.2 0 4.716 4.758 5.953 8 10.616 3.065-4.634 8-6.050 8-10.616 0-2.319-1.882-4.2-4.2-4.2z"></path>
+            </symbol>
+            <symbol id="icon-menu" viewBox="0 0 24 28">
+                <title>menu</title>
+                <path d="M24 21v2q0 0.406-0.297 0.703t-0.703 0.297h-22q-0.406 0-0.703-0.297t-0.297-0.703v-2q0-0.406 0.297-0.703t0.703-0.297h22q0.406 0 0.703 0.297t0.297 0.703zM24 13v2q0 0.406-0.297 0.703t-0.703 0.297h-22q-0.406 0-0.703-0.297t-0.297-0.703v-2q0-0.406 0.297-0.703t0.703-0.297h22q0.406 0 0.703 0.297t0.297 0.703zM24 5v2q0 0.406-0.297 0.703t-0.703 0.297h-22q-0.406 0-0.703-0.297t-0.297-0.703v-2q0-0.406 0.297-0.703t0.703-0.297h22q0.406 0 0.703 0.297t0.297 0.703z"></path>
+            </symbol>
+            <symbol id="icon-display" viewBox="0 0 32 32">
+                <title>display</title>
+                <path d="M27 4.996l-22 0.004c-0.553 0-1 0.443-1 0.996v14c0 0.553 0.447 1 1 1h22c0.553 0 1-0.447 1-1v-14c0-0.553-0.447-1-1-1zM27 20h-22v-14.004h22v14.004zM29 1h-26c-1.657 0-3 1.342-3 3v20c0 1.654 1.338 2.994 2.99 2.998h10.010v1.217l-6.242 0.811c-0.446 0.111-0.758 0.511-0.758 0.97 0 0.553 0.447 1 1 1h18c0.553 0 1-0.447 1-1 0-0.459-0.312-0.859-0.758-0.971l-6.242-0.81v-1.217h10.010c1.652-0.004 2.99-1.344 2.99-2.998v-20c0-1.658-1.344-3-3-3zM30 24c0 0.551-0.449 1-1 1h-26c-0.552 0-1-0.449-1-1v-20c0-0.552 0.448-1 1-1h26c0.551 0 1 0.448 1 1v20z"></path>
+            </symbol>
+            <symbol id="icon-castle" viewBox="0 0 24 28">
+                <title>castle</title>
+                <path d="M10 15.75v-3.5q0-0.25-0.25-0.25h-1.5q-0.25 0-0.25 0.25v3.5q0 0.25 0.25 0.25h1.5q0.25 0 0.25-0.25zM18 15.75v-3.5q0-0.25-0.25-0.25h-1.5q-0.25 0-0.25 0.25v3.5q0 0.25 0.25 0.25h1.5q0.25 0 0.25-0.25zM26 16.25v11.75h-10v-5q0-1.25-0.875-2.125t-2.125-0.875-2.125 0.875-0.875 2.125v5h-10v-11.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v1.75h2v-9.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v1.75h2v-1.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v1.75h2v-1.75q0-0.25 0.25-0.25h0.25v-6.141q-0.5-0.297-0.5-0.859 0-0.406 0.297-0.703t0.703-0.297 0.703 0.297 0.297 0.703q0 0.562-0.5 0.859v0.141h4.25q0.25 0 0.25 0.25v3.5q0 0.25-0.25 0.25h-4.25v2h0.25q0.25 0 0.25 0.25v1.75h2v-1.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v1.75h2v-1.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25v9.75h2v-1.75q0-0.25 0.25-0.25h1.5q0.25 0 0.25 0.25z"></path>
+            </symbol>
+            <symbol id="icon-person" viewBox="0 0 22 28">
+                <title>person</title>
+                <path d="M22 21.953q0 1.875-1.141 2.961t-3.031 1.086h-13.656q-1.891 0-3.031-1.086t-1.141-2.961q0-0.828 0.055-1.617t0.219-1.703 0.414-1.695 0.672-1.523 0.969-1.266 1.336-0.836 1.742-0.313q0.141 0 0.656 0.336t1.164 0.75 1.687 0.75 2.086 0.336 2.086-0.336 1.687-0.75 1.164-0.75 0.656-0.336q0.953 0 1.742 0.313t1.336 0.836 0.969 1.266 0.672 1.523 0.414 1.695 0.219 1.703 0.055 1.617zM17 8q0 2.484-1.758 4.242t-4.242 1.758-4.242-1.758-1.758-4.242 1.758-4.242 4.242-1.758 4.242 1.758 1.758 4.242z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <header class="ws-header">
+
+        <section class="ws-menu__section">
+            <div class="row">
+                <div class="large-12 columns">
+
+                    <div class="top-bar ws-top-bar_page">
+
+                        <div class="top-bar-title">
+                            <div class="row align-middle">
+                                <div class="small-10 columns">
+                                    <h3 class="hide-for-large float-left ws-company-title">
+                                        <img src="img/logo_light.png" alt="Wedding cakes">
+                                        Wedding Site
+                                    </h3>
+                                </div>
+                                <div class="small-2 columns">
+                                    <span data-responsive-toggle="responsive-menu" data-hide-for="large">
+                                        <span class="menu-icon float-right" data-toggle>
+                                            <svg class="ws-icon__menu">
+                                                <use xlink:href="#icon-menu"></use>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="responsive-menu">
+
+                            <ul class="menu ws-menu">
+                                <li>
+                                    <a href="index.html">Home
+                                        <svg class="ws-icon__heart ws-icon__heart_dark">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                        <svg class="ws-icon__heart ws-icon__heart_light">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="decor.html">Decor
+                                        <svg class="ws-icon__heart ws-icon__heart_dark">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                        <svg class="ws-icon__heart ws-icon__heart_light">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="photo.html">Photo
+                                        <svg class="ws-icon__heart ws-icon__heart_dark">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                        <svg class="ws-icon__heart ws-icon__heart_light">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="music.html">Music
+                                        <svg class="ws-icon__heart ws-icon__heart_dark">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                        <svg class="ws-icon__heart ws-icon__heart_light">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cakes.html">Cakes
+                                        <svg class="ws-icon__heart ws-icon__heart_dark">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                        <svg class="ws-icon__heart ws-icon__heart_light">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contacts.html">Contacts
+                                        <svg class="ws-icon__heart ws-icon__heart_dark">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                        <svg class="ws-icon__heart ws-icon__heart_light">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="section ws-flowers__section section-after-menu">
+
+            <div class="row">
+                <div class="large-12 columns">
+                    <h2 class="section-title">
+                        FLOWERS
+                    </h2>
+                    <hr class="section-title__line">
+
+                    <div class="orbit" role="flowers" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+                        <ul class="orbit-container ws-orbit-container">
+                            <li class="is-active orbit-slide">
+                                <img class="orbit-image" src="img/flowers/slide1.jpg" alt="Flowers">
+                            </li>
+                            <li class="orbit-slide">
+                                <img class="orbit-image" src="img/flowers/slide2.jpg" alt="Flowers">
+                            </li>
+                            <li class="orbit-slide">
+                                <img class="orbit-image" src="img/flowers/slide3.jpg" alt="Flowers">
+                            </li>
+                            <li class="orbit-slide">
+                                <img class="orbit-image" src="img/flowers/slide4.jpg" alt="Flowers">
+                            </li>
+                            <li class="orbit-slide">
+                                <img class="orbit-image" src="img/flowers/slide5.jpg" alt="Flowers">
+                            </li>
+                            <li class="orbit-slide">
+                                <img class="orbit-image" src="img/flowers/slide6.jpg" alt="Flowers">
+                            </li>
+                        </ul>
+
+                        <nav class="orbit-bullets orbit-bullets_flowers">
+
+                            <div class="row">
+                                <div class="large-2 medium-4 small-6 columns">
+                                    <button class="is-active ws-bullet_flowers" data-slide="0">
+                                        <img src="img/flowers/slide1_s.jpg">
+                                    </button>
+                                </div>
+                                <div class="large-2 medium-4 small-6 columns">
+                                    <button class="ws-bullet_flowers" data-slide="1">
+                                        <img src="img/flowers/slide2_s.jpg">
+                                    </button>
+                                </div>
+                                <div class="large-2 medium-4 small-6 columns">
+                                    <button class="ws-bullet_flowers" data-slide="2">
+                                        <img src="img/flowers/slide3_s.jpg">
+                                    </button>
+                                </div>
+                                <div class="large-2 medium-4 small-6 columns">
+                                    <button class="ws-bullet_flowers" data-slide="3">
+                                        <img src="img/flowers/slide4_s.jpg">
+                                    </button>
+                                </div>
+                                <div class="large-2 medium-4 small-6 columns">
+                                    <button class="ws-bullet_flowers" data-slide="4">
+                                        <img src="img/flowers/slide5_s.jpg">
+                                    </button>
+                                </div>
+                                <div class="large-2 medium-4 small-6 columns">
+                                    <button class="ws-bullet_flowers" data-slide="5">
+                                        <img src="img/flowers/slide6_s.jpg">
+                                    </button>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+
+                    <hr class="section-line section-line_pink">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="ws-consultation__section parallax-window" data-parallax="scroll" data-image-src="img/parallax/consultation.jpg">
+            <div class="section ws-parallax__overlay">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h2 class="section-title section-title_light">
+                        CONSULTATION
+                    </h2>
+                    <hr class="section-title__line section-title__line_pink">
+
+                    <p class="ws-consultation__text float-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, expedita. Pariatur obcaecati sequi ad id, nobis nihil eos rem hic consectetur doloremque eligendi repellendus cum velit necessitatibus quasi culpa quibusdam alias.
+                    </p>
+
+                    <p class="ws-consultation__text float-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut rem, et, expedita provident modi ab non possimus optio similique, explicabo fugiat voluptatem, ex. Mollitia delectus ex vel officiis deserunt perspiciatis impedit dignissimos repellat, vitae esse possimus non aperiam, asperiores voluptatem ut. Minima pariatur eos quidem necessitatibus consectetur nulla placeat reprehenderit.
+                    </p>
+
+                    <p class="ws-consultation__text float-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ex sequi quaerat sunt accusamus aspernatur quo vero, est magni iure iusto animi id explicabo nemo temporibus blanditiis odit voluptatibus consequatur eveniet ratione assumenda, molestias tempore esse excepturi. Reprehenderit, necessitatibus quia?
+                    </p>
+
+                    <p class="ws-consultation__text float-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, expedita. Pariatur obcaecati sequi ad id, nobis nihil eos rem hic consectetur doloremque eligendi repellendus cum velit necessitatibus quasi culpa quibusdam alias.
+                    </p>
+
+                    <hr class="section-line section-line_pink">
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h2 class="section-title">
+                        DECORATION
+                    </h2>
+                    <hr class="section-title__line">
+
+                    <div class="row align-middle">
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-decor__item" href="img/decor/decor1.jpg" data-fancybox-group="decor" title="Romantic Wedding">
+                                    <img src="img/decor/decor1_s.jpg" alt="decor" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-decor__item" href="img/decor/decor2.jpg" data-fancybox-group="decor" title="Flower Wedding">
+                                    <img src="img/decor/decor2_s.jpg" alt="decor" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-decor__item" href="img/decor/decor3.jpg" data-fancybox-group="decor" title="Night Wedding">
+                                    <img src="img/decor/decor3_s.jpg" alt="decor" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-middle">
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-decor__item" href="img/decor/decor5.jpg" data-fancybox-group="decor" title="Flower Wedding">
+                                    <img src="img/decor/decor5_s.jpg" alt="decor" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-decor__item" href="img/decor/decor4.jpg" data-fancybox-group="decor" title="Romantic Wedding">
+                                    <img src="img/decor/decor4_s.jpg" alt="decor" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-decor__item" href="img/decor/decor6.jpg" data-fancybox-group="decor" title="Night Wedding">
+                                    <img src="img/decor/decor6_s.jpg" alt="decor" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-middle">
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-decor__item" href="img/decor/decor7.jpg" data-fancybox-group="decor" title="Romantic Wedding">
+                                    <img src="img/decor/decor7_s.jpg" alt="decor" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-decor__item" href="img/decor/decor8.jpg" data-fancybox-group="decor" title="Flower Wedding">
+                                    <img src="img/decor/decor8_s.jpg" alt="decor" />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-decor__item" href="img/decor/decor9.jpg" data-fancybox-group="decor" title="Night Wedding">
+                                    <img src="img/decor/decor9_s.jpg" alt="decor" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="section-line">
+                </div>
+            </div>
+        </section>
+
+        <section class="section ws-car__section">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h2 class="section-title section-title_light">
+                        WEDDING CAR
+                    </h2>
+                    <hr class="section-title__line section-title__line_pink">
+
+                    <div class="row">
+                        <div class="medium-3 small-6 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-car__item" href="img/car/car1.jpg" data-fancybox-group="car">
+                                    <div class="ws-front">
+                                        <img src="img/car/car1_s.jpg" alt="WEDDING CAR" />
+                                    </div>
+
+                                    <div class="ws-back">
+                                        <p class="ws-car__text">
+                                            Size: 5 places<br>
+                                            Price: $40 an hour
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="medium-3 small-6 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-car__item" href="img/car/car2.jpg" data-fancybox-group="car">
+                                    <div class="ws-front">
+                                        <img src="img/car/car2_s.jpg" alt="WEDDING CAR" />
+                                    </div>
+
+                                    <div class="ws-back">
+                                        <p class="ws-car__text">
+                                            Size: 9 places<br>
+                                            Price: $70 an hour
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="medium-3 small-6 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-car__item" href="img/car/car3.jpg" data-fancybox-group="car">
+                                    <div class="ws-front">
+                                        <img src="img/car/car3_s.jpg" alt="WEDDING CAR" />
+                                    </div>
+
+                                    <div class="ws-back">
+                                        <p class="ws-car__text">
+                                            Size: 12 places<br>
+                                            Price: $90 an hour
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="medium-3 small-6 columns">
+                            <div class="ws-perspective">
+                                <a class="fancybox float-center ws-car__item" href="img/car/car4.jpg" data-fancybox-group="car">
+                                    <div class="ws-front">
+                                        <img src="img/car/car4_s.jpg" alt="WEDDING CAR" />
+                                    </div>
+
+                                    <div class="ws-back">
+                                        <p class="ws-car__text">
+                                            Size: 5 places<br>
+                                            Price: $60 an hour
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="section-line section-line_pink">
+                </div>
+            </div>
+        </section>
+
+        <section class="ws-consultation__section parallax-window" data-parallax="scroll" data-image-src="img/parallax/consultation.jpg">
+            <div class="section ws-parallax__overlay">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h2 class="section-title section-title_light">
+                        MORE INFORMATION
+                    </h2>
+                    <hr class="section-title__line section-title__line_pink">
+
+                    <p class="ws-consultation__text float-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, expedita. Pariatur obcaecati sequi ad id, nobis nihil eos rem hic consectetur doloremque eligendi repellendus cum velit necessitatibus quasi culpa quibusdam alias.
+                    </p>
+
+                    <p class="ws-consultation__text float-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut rem, et, expedita provident modi ab non possimus optio similique, explicabo fugiat voluptatem, ex.
+                    </p>
+
+                    <p class="ws-consultation__text float-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ex sequi quaerat sunt accusamus aspernatur quo vero, est magni iure iusto animi id explicabo?
+                    </p>
+
+                    <p class="ws-consultation__text float-center">
+                        Pariatur obcaecati sequi ad id, nobis nihil eos rem hic consectetur doloremque eligendi repellendus cum velit necessitatibus quasi culpa quibusdam alias.
+                    </p>
+
+                    <hr class="section-line section-line_pink">
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="section ws-service">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h2 class="section-title">
+                        ADDITIONAL FEATURES
+                    </h2>
+                    <hr class="section-title__line">
+
+                    <div class="row">
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-icon__wrapper">
+                                <svg class="ws-icon__service">
+                                    <use xlink:href="#icon-display"></use>
+                                </svg>
+                            </div>
+                            <h4>
+                                CONSULTATION
+                            </h4>
+                            <p class="ws-service__text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean non ummy hendrerit mauris.
+                            </p>
+                        </div>
+
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-icon__wrapper">
+                                <svg class="ws-icon__service">
+                                    <use xlink:href="#icon-castle"></use>
+                                </svg>
+                            </div>
+                            <h4>
+                                DESIGNING PROCESS
+                            </h4>
+                            <p class="ws-service__text">
+                                Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque pen.
+                            </p>
+                        </div>
+
+                        <div class="medium-4 small-12 columns">
+                            <div class="ws-icon__wrapper">
+                                <svg class="ws-icon__service">
+                                    <use xlink:href="#icon-person"></use>
+                                </svg>
+                            </div>
+                            <h4>
+                                ORDER ONLINE
+                            </h4>
+                            <p class="ws-service__text">
+                                Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque pen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr class="section-line">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer class="ws-footer">
+        <div class="row">
+            <div class="large-12 columns">
+                <h3 class="ws-footer__logo">
+                    <img src="img/logo.png" alt="Wedding cakes">
+                    Wedding Site
+                </h3>
+                <p class="ws-copyright">
+                    Copyright &#169; 2016 | Privacy Policy
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/scroll-menu.js"></script>
+
+
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="./fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="./fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    <!-- Add Media helper (this is optional) -->
+    <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script src="js/fancybox.js"></script>
+
+
+
+
+
+  </body>
+</html>
+
+
+
