@@ -3769,13 +3769,6 @@ h4 {
               transform: scale(1); }
     .ws-flowers__section .ws-bullet_flowers:hover {
       border-color: #c89e97; }
-      .ws-flowers__section .ws-bullet_flowers:hover img {
-        -webkit-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-                transform: scale(1.1);
-        transition: -webkit-transform .4s ease-in;
-        transition: transform .4s ease-in;
-        transition: transform .4s ease-in, -webkit-transform .4s ease-in; }
   .ws-flowers__section .section-line_pink {
     position: relative;
     z-index: 12; }
