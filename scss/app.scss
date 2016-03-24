@@ -1007,6 +1007,13 @@ h4 {
 	transition: border-color .3s ease-in;
 }
 
+label:hover,
+[type="radio"]:hover,
+[type="checkbox"]:hover,
+[type="date"]:hover{
+	cursor: pointer;
+}
+
 [type="date"]{
 	color: #939393;
 }
@@ -1047,5 +1054,12 @@ h4 {
 	transition: margin-top .3s ease-out;
 }
 
+.ws-radio__img{
+	width: 80%;
+	margin-bottom: 15px;
+}
+.ws-radio_car [type='radio']{
+	margin-right: 0;
+}
 
 
