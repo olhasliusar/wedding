@@ -3423,6 +3423,12 @@ h4 {
     @media screen and (max-width: 39.9375em) {
       .welcom-to-site__img-wrapper {
         margin-top: 10px; } }
+    @media screen and (min-width: 75em) {
+      .welcom-to-site__img-wrapper {
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+        opacity: 0; } }
     .welcom-to-site__img-wrapper:before {
       content: "";
       display: block;
@@ -3469,10 +3475,19 @@ h4 {
   text-align: center;
   padding-bottom: 30px;
   max-width: 900px; }
+  .special-offer__row {
+    overflow: hidden; }
 
 .special-offer__img-wrapper {
   text-align: center;
   padding: 15px 40px 5px; }
+  @media screen and (min-width: 75em) {
+    .special-offer__img-wrapper {
+      position: relative; }
+      .special-offer__img-wrapper_l {
+        left: -200%; }
+      .special-offer__img-wrapper_r {
+        right: -200%; } }
 
 /*END SPECIAL OFFER*/
 /*TESTIMONIALS*/
@@ -3481,6 +3496,12 @@ h4 {
 
 .ws-testimonials__item {
   padding: 20px 30px 0; }
+  @media screen and (min-width: 75em) {
+    .ws-testimonials__item {
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0);
+      opacity: 0; } }
 
 .ws-testimonials__author {
   font-size: 16px;
@@ -3527,6 +3548,14 @@ h4 {
 
 .advantage__text {
   padding-bottom: 20px; }
+
+.advantage__row {
+  overflow: hidden; }
+
+@media screen and (min-width: 75em) {
+  .advantage__item {
+    position: relative;
+    top: -500%; } }
 
 /*END ADVANTAGES*/
 /*VARIETY OF CAKES*/
@@ -3769,6 +3798,13 @@ h4 {
               transform: scale(1); }
     .ws-flowers__section .ws-bullet_flowers:hover {
       border-color: #c89e97; }
+      .ws-flowers__section .ws-bullet_flowers:hover img {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        transition: -webkit-transform .4s ease-in;
+        transition: transform .4s ease-in;
+        transition: transform .4s ease-in, -webkit-transform .4s ease-in; }
   .ws-flowers__section .section-line_pink {
     position: relative;
     z-index: 12; }
