@@ -2,7 +2,7 @@
 
   var $menu = $("#ws-menu"),
     hClass = "ws-menu__section_fixed",
-    pos = parseFloat( $(".ws-header").css("height") ) - 103;
+    pos = parseFloat( $(".ws-header").height() ) - 103;
 
   $(document).scroll(function() {
     if($(this).scrollTop() > pos) {
