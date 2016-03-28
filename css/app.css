@@ -3649,6 +3649,12 @@ h4 {
   position: relative;
   z-index: 45;
   transition: border-color .3s ease-in; }
+  @media screen and (min-width: 75em) {
+    .ws-decor__item {
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0);
+      opacity: 0; } }
   .ws-decor__item img {
     width: 100%;
     transition: -webkit-transform .3s ease-in;
@@ -3766,11 +3772,20 @@ h4 {
 
 /*END CAR*/
 /*CONSULTATION*/
+@media screen and (min-width: 75em) {
+  .ws-consultation {
+    overflow: hidden; } }
+
 .ws-consultation__text {
   text-align: center;
   max-width: 900px;
   color: #FFF;
   margin-bottom: 40px; }
+  @media screen and (min-width: 75em) {
+    .ws-consultation__text {
+      position: relative;
+      top: -300%;
+      left: -300%; } }
 
 /*END CONSULTATION*/
 /*FLOWERS*/
@@ -3812,6 +3827,23 @@ h4 {
     z-index: 12; }
 
 /*END FLOWERS*/
+/*INFORMATION*/
+@media screen and (min-width: 75em) {
+  .ws-information {
+    overflow: hidden; } }
+
+.ws-information__text {
+  text-align: center;
+  max-width: 900px;
+  color: #FFF;
+  margin-bottom: 40px; }
+  @media screen and (min-width: 75em) {
+    .ws-information__text {
+      position: relative;
+      top: -300%;
+      left: -300%; } }
+
+/*END INFORMATION*/
 /*SERVICES*/
 .ws-service h4 {
   font-size: 20px; }
@@ -3829,6 +3861,13 @@ h4 {
 .ws-service .ws-icon__wrapper {
   text-align: center;
   padding-bottom: 20px; }
+
+@media screen and (min-width: 75em) {
+  .ws-service__wrapper {
+    overflow: hidden; }
+  .ws-service__item {
+    position: relative;
+    top: -300%; } }
 
 /*END SERVICES*/
 /*PHOTO*/
