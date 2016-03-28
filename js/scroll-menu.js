@@ -3,8 +3,6 @@
   var $menu = $("#ws-menu"),
     hClass = "ws-menu__section_fixed",
     pos = $("#ws-header-without-menu").height();
-  // var $menu = $("#ws-menu"),
-  //   hClass = "ws-menu__section_fixed",
   //   pos = $(".ws-header").height() - $menu.height();
 
   $(document).scroll(function() {
