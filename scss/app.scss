@@ -347,6 +347,12 @@ h4 {
 /*WELCOME TO WEBSITE*/
 .welcom-to-site__section_fixed{
 	margin-top: 103px;
+	@include breakpoint(medium only) {
+		margin-top: 60px;
+	}
+	@include breakpoint(small only) {
+		margin-top: 52px;
+	}
 }
 
 .welcom-to-site{

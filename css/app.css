@@ -3414,6 +3414,12 @@ h4 {
 /*WELCOME TO WEBSITE*/
 .welcom-to-site__section_fixed {
   margin-top: 103px; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .welcom-to-site__section_fixed {
+      margin-top: 60px; } }
+  @media screen and (max-width: 39.9375em) {
+    .welcom-to-site__section_fixed {
+      margin-top: 52px; } }
 
 .welcom-to-site {
   text-align: center;
