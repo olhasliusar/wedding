@@ -12,7 +12,7 @@
 @include foundation-forms;
 // @include foundation-range-input;
 // @include foundation-accordion;
-// @include foundation-accordion-menu;
+@include foundation-accordion-menu;
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
 // @include foundation-button-group;
@@ -950,6 +950,28 @@ h4 {
 	color: #FFF;
 	min-height: 100vh;
 }
+.ws-menu_music > li a{
+	color: #FFF;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	padding: 20px 0;
+	&:focus{
+		outline: none;
+	}
+	&:after{
+		right: 0.5rem;
+	}
+}
+.menu.nested.ws-menu_music-dropdown{
+	margin-left: 0;
+}
+.ws-menu_music-dropdown{
+	text-align: center;
+}
+.ws-popular-compositions{
+	text-align: left;
+	padding: 15px 0;
+	margin: 10px 0;
+}
 
 .ws-player__wrapper{
 	background-color: rgba(255, 255, 255, .2);
@@ -958,14 +980,15 @@ h4 {
 	border-radius: 5px;
 	text-align: center;
 	max-width: 360px;
+	margin-top: 10px;
 	@include breakpoint(450px down) {
 		padding: 5px;
 		width: auto;
 	}
 }
-.ws-player_saxophonist{
-	margin: 0px auto;
-}
+// .ws-player_saxophonist{
+// 	margin: 0px auto;
+// }
 @include breakpoint(450px) {
 	#amazingaudioplayer-1,
 	#amazingaudioplayer-2{
@@ -1007,60 +1030,16 @@ h4 {
 		display: none !important;
 	}
 }
-
-.ws-video__item{
-	text-align: center;
+.ws-menu-music__column{
+	max-width: 560px;
 }
-.ws-video__item iframe{
-	width: 250px;
-	height: 125px;
-	margin-bottom: 15px;
-	@include breakpoint(420px) {
-		width: 310px;
-		height: 175px;
-	}
-	@include breakpoint(medium only) {
-		width: 450px;
-		height: 250px;
-	}
+.ws-video{
+	width: 100%;
 }
-.ws-music-expirience{
-	padding: 20px 0;
-	text-align: justify;
-	margin: 40px 0;
+.ws-video_piano{
+	width: 100%;
 }
 
-.ws-songs-list{
-	color: #FFF;
-	ul {
-		list-style: none;
-		margin: 0;
-	}
-	@include breakpoint(medium down) {
-		text-align: center;
-		margin-bottom: 50px;
-	}
-}
-
-.ws-media{
-	.ws-player__wrapper_singer{
-		margin-bottom: 50px;
-	}
-	@include breakpoint(large) {
-		float: right;
-		float: left;
-		iframe{
-			width: 360px;
-			height: 200px;
-		}
-	}
-	@include breakpoint(medium only) {
-		iframe{
-			width: 450px;
-			height: 250px;
-		}
-	}
-}
 /*END MUSIC*/
 
 /*CONTACTS*/

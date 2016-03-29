@@ -4004,8 +4004,15 @@ h4 {
     right: 0.5rem; }
 
 .menu.nested.ws-menu_music-dropdown {
-  margin-left: 0;
+  margin-left: 0; }
+
+.ws-menu_music-dropdown {
   text-align: center; }
+
+.ws-popular-compositions {
+  text-align: left;
+  padding: 15px 0;
+  margin: 10px 0; }
 
 .ws-player__wrapper {
   background-color: rgba(255, 255, 255, 0.2);
