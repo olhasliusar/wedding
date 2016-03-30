@@ -1,15 +1,9 @@
 ;(function($) {
 
-	$(".ws-menu__video-piano").on("click", function(){
-	    setTimeout(calcVideoHeight, 10);
-	});
+	var $videoPiano = $(".ws-menu_music-dropdown").parent().find('.ws-video');
+    	$wVideoPiano = $(".ws-menu__video").width();
 
-	function calcVideoHeight(){
-    	var $videoPiano = $(".ws-video_piano"),
-	    	$wVideoPiano = $videoPiano.width();
-
-	    return $videoPiano.height( Math.round($wVideoPiano / 1.7) );
-	}
+    $videoPiano.height( Math.round($wVideoPiano / 1.7) );
 
 })(jQuery);
 
