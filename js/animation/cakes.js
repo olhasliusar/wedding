@@ -19,12 +19,12 @@ $(document).ready(function(){
                     cake4 = $("#cakes__gallery_4"),
                     cake5 = $("#cakes__gallery_5"),
                     cake6 = $("#cakes__gallery_6");
-                TweenLite.to(cake1,3, {left:"0", ease:Quint.easeOut});
-                TweenLite.to(cake2,3, {left:"0", ease:Quint.easeOut});
-                TweenLite.to(cake3,3, {left:"0", ease:Quint.easeOut});
-                TweenLite.to(cake4,3, {right:"0", ease:Quint.easeOut});
-                TweenLite.to(cake5,3, {right:"0", ease:Quint.easeOut});
-                TweenLite.to(cake6,3, {right:"0", ease:Quint.easeOut});
+                TweenLite.to(cake1,2, {left:"0", ease:Quint.easeOut});
+                TweenLite.to(cake2,2, {left:"0", ease:Quint.easeOut});
+                TweenLite.to(cake3,2, {left:"0", ease:Quint.easeOut});
+                TweenLite.to(cake4,2, {right:"0", ease:Quint.easeOut});
+                TweenLite.to(cake5,2, {right:"0", ease:Quint.easeOut});
+                TweenLite.to(cake6,2, {right:"0", ease:Quint.easeOut});
             }
 
         });
