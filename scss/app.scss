@@ -143,6 +143,9 @@ h4 {
 	padding: 0 !important;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7)  !important;
 }
+.overflow-hidden{
+	overflow: hidden;
+}
 
 /*HEADER*/
 .ws-company-title{
@@ -422,10 +425,6 @@ h4 {
 	text-align: center;
 	padding-bottom: 30px;
 	max-width: 900px;
-
-	&__row{
-		overflow: hidden;
-	}
 }
 .special-offer__img-wrapper{
 	text-align: center;
@@ -569,6 +568,10 @@ h4 {
 				// }
 			}
 		}
+		@include breakpoint(1200px){
+			position: relative;
+			top: -300%;
+		}
 	}
 
 }
@@ -599,6 +602,18 @@ h4 {
 			color: #A98386;
 			color: #9C797C;
 			transition: color .3s ease-in;
+		}
+	}
+
+	&__item{
+		@include breakpoint(1200px){
+			position: relative;
+			&_l{
+				left: -200%;
+			}
+			&_r{
+				right: -200%;
+			}
 		}
 	}
 
@@ -1036,10 +1051,6 @@ h4 {
 .ws-video{
 	width: 100%;
 }
-.ws-video_piano{
-	width: 100%;
-}
-
 /*END MUSIC*/
 
 /*CONTACTS*/

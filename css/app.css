@@ -3254,6 +3254,9 @@ h4 {
   padding: 0 !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7) !important; }
 
+.overflow-hidden {
+  overflow: hidden; }
+
 /*HEADER*/
 .ws-company-title {
   text-transform: uppercase;
@@ -3508,8 +3511,6 @@ h4 {
   text-align: center;
   padding-bottom: 30px;
   max-width: 900px; }
-  .special-offer__row {
-    overflow: hidden; }
 
 .special-offer__img-wrapper {
   text-align: center;
@@ -3621,6 +3622,10 @@ h4 {
       .cake-pricing__table th,
       .cake-pricing__table td {
         padding-right: 60px; } }
+  @media screen and (min-width: 75em) {
+    .cake-pricing__table {
+      position: relative;
+      top: -300%; } }
 
 /*END CAKE PRICING*/
 /*FLAVOURS AND FILLINGS*/
@@ -3644,6 +3649,14 @@ h4 {
   color: #A98386;
   color: #9C797C;
   transition: color .3s ease-in; }
+
+@media screen and (min-width: 75em) {
+  .ws-fancybox__item {
+    position: relative; }
+    .ws-fancybox__item_l {
+      left: -200%; }
+    .ws-fancybox__item_r {
+      right: -200%; } }
 
 .ws-fancybox__img-caption {
   text-align: center;
@@ -4067,9 +4080,6 @@ h4 {
   max-width: 560px; }
 
 .ws-video {
-  width: 100%; }
-
-.ws-video_piano {
   width: 100%; }
 
 /*END MUSIC*/

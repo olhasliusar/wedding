@@ -198,7 +198,7 @@
                     <h2 class="section-title section-title_light">
                         CAKE PRICING
                     </h2>
-                    <hr class="section-title__line section-title__line_pink">
+                    <hr class="section-title__line section-title__line_pink" id="cakes__before-pricing">
 
                     <table class="stack cake-pricing__table">
                         <thead>
@@ -316,11 +316,11 @@
                     <h2 class="section-title section-title_light">
                         WEDDING CAKE GALLERY
                     </h2>
-                    <hr class="section-title__line section-title__line_pink">
+                    <hr class="section-title__line section-title__line_pink" id="cakes__before-gallery">
 
-                    <div class="row">
+                    <div class="row overflow-hidden">
                         <div class="large-2 medium-4 small-6 columns">
-                            <a class="fancybox ws-fancybox__item" href="img/cake-gallery/page-3_img5_original.jpg" data-fancybox-group="gallery" title="CORSAGE CASCADE">
+                            <a class="fancybox ws-fancybox__item ws-fancybox__item_l" href="img/cake-gallery/page-3_img5_original.jpg" data-fancybox-group="gallery" title="CORSAGE CASCADE" id="cakes__gallery_1">
                                 <div class="ws-fancybox__thumbnail-wrapper_round">
                                     <img src="img/cake-gallery/thumbnail/page-3_img5.jpg" alt="cake" />
                                 </div>
@@ -331,7 +331,7 @@
                         </div>
 
                         <div class="large-2 medium-4 small-6 columns">
-                            <a class="fancybox ws-fancybox__item" href="img/cake-gallery/page-3_img6_original.jpg" data-fancybox-group="gallery" title="VICTORIAN CAMEO">
+                            <a class="fancybox ws-fancybox__item ws-fancybox__item_l" href="img/cake-gallery/page-3_img6_original.jpg" data-fancybox-group="gallery" title="VICTORIAN CAMEO" id="cakes__gallery_2">
                                 <div class="ws-fancybox__thumbnail-wrapper_round">
                                     <img src="img/cake-gallery/thumbnail/page-3_img6.jpg" alt="cake" />
                                 </div>
@@ -342,7 +342,7 @@
                         </div>
 
                         <div class="large-2 medium-4 small-6 columns">
-                            <a class="fancybox ws-fancybox__item" href="img/cake-gallery/page-3_img7_original.jpg" data-fancybox-group="gallery" title="SILVER LEAF &#038; RUFFLES">
+                            <a class="fancybox ws-fancybox__item ws-fancybox__item_l" href="img/cake-gallery/page-3_img7_original.jpg" data-fancybox-group="gallery" title="SILVER LEAF &#038; RUFFLES" id="cakes__gallery_3">
                                 <div class="ws-fancybox__thumbnail-wrapper_round">
                                     <img src="img/cake-gallery/thumbnail/page-3_img7.jpg" alt="cake" />
                                 </div>
@@ -353,7 +353,7 @@
                         </div>
 
                         <div class="large-2 medium-4 small-6 columns">
-                            <a class="fancybox ws-fancybox__item" href="img/cake-gallery/page-3_img8_original.jpg" data-fancybox-group="gallery" title="BRUSHED LACE">
+                            <a class="fancybox ws-fancybox__item ws-fancybox__item_r" href="img/cake-gallery/page-3_img8_original.jpg" data-fancybox-group="gallery" title="BRUSHED LACE" id="cakes__gallery_4">
                                 <div class="ws-fancybox__thumbnail-wrapper_round">
                                     <img src="img/cake-gallery/thumbnail/page-3_img8.jpg" alt="cake" />
                                 </div>
@@ -364,7 +364,7 @@
                         </div>
 
                         <div class="large-2 medium-4 small-6 columns">
-                            <a class="fancybox ws-fancybox__item" href="img/cake-gallery/page-3_img9_original.jpg" data-fancybox-group="gallery" title="STRIPES &#038; ROSES">
+                            <a class="fancybox ws-fancybox__item ws-fancybox__item_r" href="img/cake-gallery/page-3_img9_original.jpg" data-fancybox-group="gallery" title="STRIPES &#038; ROSES" id="cakes__gallery_5">
                                 <div class="ws-fancybox__thumbnail-wrapper_round">
                                     <img src="img/cake-gallery/thumbnail/page-3_img9.jpg" alt="cake" />
                                 </div>
@@ -375,7 +375,7 @@
                         </div>
 
                         <div class="large-2 medium-4 small-6 columns">
-                            <a class="fancybox ws-fancybox__item" href="img/cake-gallery/page-3_img10_original.jpg" data-fancybox-group="gallery" title="VINTAGE TEACUP">
+                            <a class="fancybox ws-fancybox__item ws-fancybox__item_r" href="img/cake-gallery/page-3_img10_original.jpg" data-fancybox-group="gallery" title="VINTAGE TEACUP" id="cakes__gallery_6">
                                 <div class="ws-fancybox__thumbnail-wrapper_round">
                                     <img src="img/cake-gallery/thumbnail/page-3_img10.jpg" alt="cake" />
                                 </div>
@@ -465,8 +465,8 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/scroll-menu.js"></script>
-
-
+    <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+    <script src="js/animation/cakes.js"></script>
 
     <!-- Add mousewheel plugin (this is optional) -->
     <script type="text/javascript" src="./fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
@@ -478,10 +478,6 @@
     <!-- Add Media helper (this is optional) -->
     <script type="text/javascript" src="./fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
     <script src="js/fancybox.js"></script>
-
-
-
-
 
   </body>
 </html>
