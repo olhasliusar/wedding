@@ -3255,8 +3255,7 @@ h4 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7) !important; }
 
 .overflow-hidden {
-  overflow: hidden;
-  background: transparent;}
+  overflow: hidden; }
 
 /*HEADER*/
 .ws-company-title {
@@ -3655,9 +3654,9 @@ h4 {
   .ws-fancybox__item {
     position: relative; }
     .ws-fancybox__item_l {
-      left: -200%; }
+      left: -350%; }
     .ws-fancybox__item_r {
-      right: -200%; } }
+      right: -350%; } }
 
 .ws-fancybox__img-caption {
   text-align: center;
