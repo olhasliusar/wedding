@@ -3255,7 +3255,8 @@ h4 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7) !important; }
 
 .overflow-hidden {
-  overflow: hidden; }
+  overflow: hidden;
+  background: transparent;}
 
 /*HEADER*/
 .ws-company-title {
