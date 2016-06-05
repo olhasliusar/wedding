@@ -150,7 +150,7 @@
                         CONTACT INFO
                     </h3>
 
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.<br>
+                    <p class="ws-address__p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque la udantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.<br>
                     </p>
                     <address class="ws-address">
                         The Company Name Inc.<br>
@@ -171,71 +171,8 @@
                         <input type="text" name="Name" placeholder="Your Name *" required>
                         <input type="tel" name="Phone" placeholder="Your Phone Number *" required>
                         <input type="email" name="E-mail" placeholder="Your Email">
-                        <input type="date" name="Date" placeholder="Your Date">
 
-                        <fieldset>
-                            <legend class="ws-legend">Make order now</legend>
-                            <label class="ws-checkbox"><input type="checkbox">Decoration</label>
-                            <label class="ws-checkbox"><input type="checkbox">Florist</label>
-                            <label class="ws-checkbox label-car">
-                                <input type="checkbox" id="checkCar" class="check-car" onchange = 'showOrHideCar();' >
-                                Wedding car
-
-                                <div class="section-car">
-                                    <div class="row" >
-                                        <div class="medium-3 small-12 columns">
-                                            <label class="ws-radio_car">
-                                                <input type="radio" name="car" value="1" required>
-                                                <img class="ws-radio__img" src="img/car/car1_s.jpg" alt="wedding car">
-                                            </label>
-                                        </div>
-                                        <div class="medium-3 small-12 columns">
-                                            <label class="ws-radio_car">
-                                                <input type="radio" name="car" value="2">
-                                                <img class="ws-radio__img" src="img/car/car2_s.jpg" alt="wedding car">
-                                            </label>
-                                        </div>
-                                        <div class="medium-3 small-12 columns">
-                                            <label class="ws-radio_car">
-                                                <input type="radio" name="car" value="3" required>
-                                                <img class="ws-radio__img" src="img/car/car3_s.jpg" alt="wedding car">
-                                            </label>
-                                        </div>
-                                        <div class="medium-3 small-12 columns">
-                                            <label class="ws-radio_car">
-                                                <input type="radio" name="car" value="4">
-                                                <img class="ws-radio__img" src="img/car/car4_s.jpg" alt="wedding car">
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </label>
-
-                            <label class="ws-checkbox label-photo ws-after-checkbox_car">
-                                <input type="checkbox" id="checkPhoto" class="check-photo" onchange = 'showOrHidePhoto();'>
-                                Photographer
-
-                                <div class="section-photo">
-                                    <div class="row">
-                                        <div class="medium-6 small-12 columns">
-                                            <label class="ws-radio_photo">
-                                                <input type="radio" name="photo" value="Richard Castle">Richard Castle
-                                            </label>
-                                        </div>
-                                        <div class="medium-6 small-12 columns">
-                                            <label class="ws-radio_photo">
-                                                <input type="radio" name="photo" value="Nina Smith">Nina Smith
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </label>
-
-                            <label class="ws-checkbox ws-after-checkbox_photo"><input type="checkbox">Music</label>
-                            <label class="ws-checkbox"><input type="checkbox">Wedding Cake</label>
-                        </fieldset>
-
-                        <textarea class="ws-textarea"></textarea>
+                        <textarea class="ws-textarea" placeholder="Your Message"></textarea>
 
                         <input type="submit" class="button ws-button float-center" value="Submit">
                     </form>
@@ -268,6 +205,7 @@
     <script src="js/app.js"></script>
     <script src="js/scroll-menu.js"></script>
     <script src="js/form-checkbox.js"></script>
+    <script src="js/form-price.js"></script>
 
 
   </body>
